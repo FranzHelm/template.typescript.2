@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>TEST</title>
+	<meta charset="UTF-8">
+
+
+
+	<!-- Polyfill(s) for older browsers -->
+	<script src="node_modules/core-js/client/shim.min.js"></script>
+	<script src="node_modules/systemjs/dist/system.src.js"></script>
+
+	<script>
+    System.import('system-config.js').then(function () {
+        System.import('app');
+      }).catch(console.error.bind(console));
+  </script>
+
+
+</head>
+
+<body>
+	<form>
+		<input id="hlc-input" type="text" value="">
+		<button id="hlc-btn-process" type="button">Process</button>
+		<hr />
+		<div id="hlc-output"></div>
+	</form>
+</body>
+
+</html>

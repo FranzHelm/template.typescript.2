@@ -1,0 +1,26 @@
+{
+  "name": "template.typescript2",
+  "version": "1.0.0",
+  "description": "Template",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "systemjs": "^0.19.39",
+    "core-js": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.37",
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.45",
+    "typescript": "^2.0.3",
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2"
+  }
+}
